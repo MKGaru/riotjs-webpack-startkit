@@ -2,7 +2,6 @@
 	"compilerOptions": {
 		"module": "es6",
 		"target": "es5",
-		"jsx": "react",
 		"moduleResolution": "node",
 		"noImplicitAny": false,
 		"importHelpers": true,
@@ -15,7 +14,6 @@
 		]
 	},
 	"filesGlob": [
-		"**/*.ts",
-		"**/*.tsx"
+		"**/*.ts"
 	]
 }

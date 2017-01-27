@@ -41,7 +41,7 @@ module.exports = {
 					type: 'typescript'
 				}
 			},
-			{	test: /\.tsx?$/,
+			{	test: /\.ts$/,
 				exclude: /node_modules/,
 				loader: [
 					'ts-loader',
