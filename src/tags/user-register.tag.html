@@ -1,0 +1,35 @@
+<user-register>
+  <form onsubmit={add} >
+    <label>first:<input type="text" name="first" required /></label>
+    <label> last:<input type="text" name="last"  required /></label>
+    <label>  age:<input type="number" name="age" required /></label>
+    <span>gender:
+      <label><input type="radio" name="gender" value="male"   required>male</label>
+      <label><input type="radio" name="gender" value="female" required>female</label>
+      <label><input type="radio" name="gender" value="other"  required>other</label>
+    </span>
+    <button>add</button>
+  </form>
+  
+  <script>
+  const register = this;
+  register.add = (e)=> {
+    e.preventDefault();
+    const query = (name)=>{
+      const node = e.srcElement.querySelector(`[name=${name}]`);
+      return node?node.value:null
+    };
+    const data = {
+      name:{
+        first:query('first'),
+        last:query('last')
+      },
+      age: +query('age'),
+      gender: query('gender')
+    }
+    e.srcElement.reset();
+    if(typeof register.opts.add == 'function')
+      register.opts.add(data);
+  }
+  </script>
+</user-register>

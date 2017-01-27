@@ -1,0 +1,40 @@
+{
+  "name": "riotjs-webpack-startkit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?"
+  },
+  "keywords": [
+    "?"
+  ],
+  "author": "MKGaru",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.15",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "glob": "^7.1.1",
+    "riot": "^3.0.7",
+    "riot-hot-reload": "0.0.2",
+    "riot-tag-loader": "0.0.1",
+    "style-loader": "^0.13.1",
+    "tag-loader": "^0.3.0",
+    "ts-loader": "^2.0.0",
+    "tslib": "^1.5.0",
+    "typescript": "^2.1.5",
+    "typescript-simple": "^7.0.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.0",
+    "webpack-dev-server": "^2.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+import './name.tag';
+import './counter.tag';
+import './user.tag';
+import './user-register.tag';
+
+<app>
+  <span>{time}</span>
+  <div><name first="Hello" last="World"></name></div>
+  <div><name first="Ola" last="Mundo"></name></div>
+  <user each={users} name={name} age={age} gender={gender} />
+  <user-register add={addUser} />
+  <counter />
+  
+  <script>
+  const app = this;
+  app.users = [
+    { name:{first:'Satoru',last:'YAMAMOTO'} , age: 34 , gender: 'male' },
+    { name:{first:'Kei',last:'SAKURA'} , age:18 , gender: 'female' }
+  ];
+  app.time = new Date();
+  setInterval(()=>{app.time=new Date();app.update()},1000);
+  
+  app.addUser = (user)=>{app.users.push(user);app.update()}
+  </script>
+</app>

@@ -1,0 +1,9 @@
+<counter>
+  <button type="button" onclick={ increment }>count:{count}</button>
+  
+  <script>
+  const counter=this;
+  counter.count = 1;
+  counter.increment = (event)=> counter.count++;
+  </script>
+</counter>
