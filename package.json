@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
+    "start": "npm run dev",
     "build": "webpack -p"
   },
   "repository": {
@@ -21,20 +22,19 @@
   "devDependencies": {
     "clean-webpack-plugin": "^0.1.15",
     "copy-webpack-plugin": "^4.0.1",
-    "css-loader": "^0.26.1",
-    "file-loader": "^0.9.0",
+    "css-loader": "^0.26.4",
+    "file-loader": "^0.10.1",
     "glob": "^7.1.1",
-    "riot": "^3.1.0",
+    "riot": "^3.3.2",
     "riot-hot-reload": "0.0.2",
     "riot-tag-loader": "^1.0.0",
-    "style-loader": "^0.13.1",
-    "tag-loader": "^0.3.0",
-    "ts-loader": "^2.0.0",
-    "tslib": "^1.5.0",
-    "typescript": "^2.1.5",
-    "typescript-simple": "^7.0.2",
-    "url-loader": "^0.5.7",
-    "webpack": "^2.2.0",
-    "webpack-dev-server": "^2.2.0"
+    "style-loader": "^0.13.2",
+    "ts-loader": "^2.0.1",
+    "tslib": "^1.6.0",
+    "typescript": "^2.2.1",
+    "typescript-simple": "^8.0.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }

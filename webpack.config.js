@@ -36,7 +36,7 @@ module.exports = {
 				exclude: /node_mdules/,
 				loader: 'riot-tag-loader',
 				query: {
-					hot: false, // set it to true if you are using hmr 
+					hot: true, // set it to true if you are using hmr 
 					debug: false, // set it to true to enable sourcemaps debugging 
 					type: 'typescript'
 				}
@@ -67,12 +67,13 @@ module.exports = {
 		}),
 		new webpack.ProvidePlugin({
 			riot: 'riot'
-		})
+		}),
+		new webpack.HotModuleReplacementPlugin()
 	],
 	devServer: {
 		contentBase: 'dist',
 		port: 8080,
-		hot:false
+		hot:true
 	},
 	performance: {
 		maxAssetSize: 5242880
